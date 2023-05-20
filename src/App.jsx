@@ -1,12 +1,23 @@
-import { Button } from "./components/base/Buttons.js";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { light } from "./theme";
+import Home from "./pages/Home.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "*",
+    element: <p>Not Found</p>
+  }
+]);
 
 function App() {
   return (
     <ThemeProvider theme={light}>
-      <h1>Hello</h1>
-      <Button>Ok</Button>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }
