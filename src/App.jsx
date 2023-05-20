@@ -7,6 +7,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />
+  },
+  {
+    path: "*",
+    element: <p>Not Found</p>
   }
 ]);
 
