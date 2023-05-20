@@ -1,14 +1,19 @@
-import { Button, ButtonLight } from "./components/base/Buttons.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { light } from "./theme";
-import Title from "./components/base/Title.jsx";
+import Home from "./pages/Home.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  }
+]);
 
 function App() {
   return (
     <ThemeProvider theme={light}>
-      <Title>XO Game</Title>
-      <Button>Login</Button>
-      <ButtonLight>Sign Up</ButtonLight>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }
