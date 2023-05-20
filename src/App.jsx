@@ -1,11 +1,12 @@
-import { Button, ButtonLight } from "./components/base/Buttons.js";
+import { Button, ButtonLight } from "./components/base/Buttons.jsx";
 import { ThemeProvider } from "styled-components";
 import { light } from "./theme";
+import Title from "./components/base/Title.jsx";
 
 function App() {
   return (
     <ThemeProvider theme={light}>
-      <h1>Hello</h1>
+      <Title>XO Game</Title>
       <Button>Login</Button>
       <ButtonLight>Sign Up</ButtonLight>
     </ThemeProvider>

@@ -1,3 +1,12 @@
+const sizes = {
+  sm: "14px",
+  normal: "16px",
+  md: "18px",
+  lg: "22px",
+  xl: "24px",
+  "2xl": "30px"
+};
+
 const base = {
   radius: "30px"
 };
@@ -19,4 +28,4 @@ const dark = {
   primary: "#3070F7"
 };
 
-export { light, dark };
+export { sizes, light, dark };
