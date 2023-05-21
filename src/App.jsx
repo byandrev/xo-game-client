@@ -1,18 +1,7 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { light } from "./theme";
-import Home from "./pages/Home.jsx";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "*",
-    element: <p>Not Found</p>
-  }
-]);
+import router from "./router/index.jsx";
 
 function App() {
   return (

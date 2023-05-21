@@ -9,6 +9,8 @@ const Button = styled.button`
   box-shadow: 0 5px 10px ${(props) => props.theme.shadow};
   cursor: pointer;
   font-weight: 500;
+  font-size: ${(props) => props.theme.sizes.normal};
+  margin-bottom: ${(props) => props.mb}px;
 `;
 
 const ButtonLight = styled(Button)`

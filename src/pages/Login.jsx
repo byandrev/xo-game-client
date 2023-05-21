@@ -1,17 +1,17 @@
 import Container from "../components/base/Container.jsx";
-import Logo from "../components/base/Logo.jsx";
-import ButtonsLogin from "../components/home/ButtonsLogin.jsx";
 import Wrapper from "../components/base/Wrapper.jsx";
+import Logo from "../components/base/Logo.jsx";
+import LoginForm from "../components/forms/LoginForm.jsx";
 
-function Home() {
+function Login() {
   return (
     <Container>
       <Wrapper>
         <Logo />
-        <ButtonsLogin />
+        <LoginForm />
       </Wrapper>
     </Container>
   );
 }
 
-export default Home;
+export default Login;

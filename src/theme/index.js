@@ -8,7 +8,9 @@ const sizes = {
 };
 
 const base = {
-  radius: "30px"
+  radius: "30px",
+  sizes: sizes,
+  font: "Roboto, sans-serif"
 };
 
 const light = {
@@ -20,7 +22,8 @@ const light = {
   secondaryLight: "#f3b457",
   text: "#777777",
   textDark: "#ffffff",
-  shadow: "#DEDDDD"
+  shadow: "#DEDDDD",
+  border: "#eee"
 };
 
 const dark = {
